@@ -25,11 +25,16 @@ function Charts({ sum, monthlyTotal, profit }: Props) {
 
   return (
     <Box display='flex' flexDirection='column'>
-      <InfoRow label='Вклав' value='Отримано' />
+      <InfoRow 
+        label='Вклав' 
+        value='Отримано' 
+        centered
+      />
       <InfoRow 
         label={decimalFormatter(totalIncome)} 
         value={decimalFormatter(totalIncome + profit)} 
         valueBold 
+        centered
       />
       <FlexibleWidthXYPlot height={300} stackBy="y">
         <VerticalRectSeries data={firstBar} color='darkgray' />

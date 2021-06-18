@@ -1,7 +1,6 @@
 import React from 'react'
-import { 
-  Box, Divider, makeStyles, Button
- } from '@material-ui/core'; 
+import { Box, Divider, Button } from '@material-ui/core'; 
+ import { Theme, makeStyles, createStyles } from '@material-ui/core/styles';
 import { useDepositContext } from '../../context/DepositInputs';
 import InfoRow from '../InfoRow/InfoRow';
 import IconTooltip from '../IconTooltip/IconTooltip';
@@ -13,11 +12,20 @@ import { DEPOSIT, DEPOSIT_TAX } from '../../config/constants';
 import Send from '@material-ui/icons/SendOutlined';
 
 function DepositCharts() {
-  const useStyles = makeStyles({
-    mb: {
-      marginBottom: 20
-    }
-  });
+  const useStyles = makeStyles((theme: Theme) => 
+    createStyles({
+      container: {
+        paddingLeft: 20,
+        [theme.breakpoints.down('sm')]: {
+          paddingLeft: 0,
+          paddingTop: 20
+        }
+      },
+      mb: {
+        marginBottom: 20
+      }
+    })
+  );
   const styles = useStyles();
   const { deposit } = useDepositContext();
 
@@ -55,9 +63,9 @@ function DepositCharts() {
   return (
     <Box 
       display='flex' 
-      paddingLeft='20px'
       flex={1}
       flexDirection='column'
+      className={styles.container}
     >
       <Charts 
         sum={sum}
