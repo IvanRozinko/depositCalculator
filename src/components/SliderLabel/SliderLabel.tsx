@@ -8,6 +8,7 @@ const useStyles = makeStyles((theme: Theme) =>
       width: 140,
       paddingBottom: 10,
       [theme.breakpoints.down('xs')]: {
+        paddingBottom: 30,
         width: 'auto'
       }
     }
