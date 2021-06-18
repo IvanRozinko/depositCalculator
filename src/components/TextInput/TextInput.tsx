@@ -4,7 +4,8 @@ import { OutlinedInput, makeStyles } from '@material-ui/core';
 const useStyle = makeStyles({
   input: {
     width: 100,
-    fontSize: 18
+    fontSize: 18,
+    alignSelf: 'center'
   }
 })
 interface Props {

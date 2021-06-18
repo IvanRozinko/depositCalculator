@@ -1,12 +1,18 @@
 import React from 'react'
-import { Box, Typography, makeStyles } from '@material-ui/core';
+import { Box, Typography } from '@material-ui/core';
+import { Theme, makeStyles, createStyles } from '@material-ui/core/styles';
 
-const useStyles = makeStyles({
-  root: {
-    width: 140,
-    paddingBottom: 10
-  }
-})
+const useStyles = makeStyles((theme: Theme) => 
+  createStyles({
+    root: {
+      width: 140,
+      paddingBottom: 10,
+      [theme.breakpoints.down('xs')]: {
+        width: 'auto'
+      }
+    }
+  })
+);
 
 interface SliderLabelType {
   label: string

@@ -5,16 +5,18 @@ interface Props {
   label: string,
   value: string,
   valueBold?: boolean,
-  children?: React.ReactChild
+  children?: React.ReactChild,
+  centered?: boolean
 }
 
-function InfoRow({ label, value, valueBold, children }: Props) {
+function InfoRow({ label, value, valueBold, children, centered }: Props) {
   const useStyle = makeStyles({
     label: {
       display: 'flex',
       flex: '1',
       alignItems: 'center',
-      fontWeight: valueBold ? 600 : 400
+      fontWeight: valueBold ? 600 : 400,
+      justifyContent: centered ? 'center' : 'start'
     }
    })
   const styles = useStyle(); 
