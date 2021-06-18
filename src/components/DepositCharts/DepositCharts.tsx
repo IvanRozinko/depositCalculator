@@ -23,6 +23,12 @@ function DepositCharts() {
       },
       mb: {
         marginBottom: 20
+      },
+      buttonContainer: {
+        [theme.breakpoints.down('sm')]: {
+          display: 'flex',
+          justifyContent: 'center'
+        }
       }
     })
   );
@@ -80,14 +86,16 @@ function DepositCharts() {
         <InfoRow label='Податок' value={uahFormatter(tax)} children={<IconTooltip />} />
         <ProfitDetails purePercent={purePercent} pureProfit={pureProfit} />
         <Divider className={styles.mb} />
-        <Button
-          variant='contained'
-          color='primary'
-          startIcon={<Send />}
-          onClick={handleStartDeposit}
-        >
-          Оформити депозит
-        </Button>
+        <Box className={styles.buttonContainer}>
+          <Button
+            variant='contained'
+            color='primary'
+            startIcon={<Send />}
+            onClick={handleStartDeposit}
+          >
+            Оформити депозит
+          </Button>
+        </Box>
       </Box>
     </Box>
   )
