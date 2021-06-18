@@ -14,7 +14,8 @@ const useStyles = makeStyles((theme: Theme) =>
       backgroundColor: 'gray',
       flexDirection: 'row',
       [theme.breakpoints.down('sm')]: {
-        flexDirection: 'column'
+        flexDirection: 'column',
+        margin: '10px 0'
       }
     }
   })

@@ -1,7 +1,8 @@
 import React from 'react'
 import { 
-  makeStyles, Typography, Checkbox, FormControlLabel, Box
+ Typography, Checkbox, FormControlLabel, Box
 } from '@material-ui/core'; 
+import { Theme, makeStyles, createStyles } from '@material-ui/core/styles';
 import InputSlider from '../InputSlider/InputSlider';
 import RateText from '../RateText/RateText';
 import SliderLabel from '../SliderLabel/SliderLabel';
@@ -14,16 +15,21 @@ import { duration, rates, longation } from '../../mocks/depositRanks';
 import { stripNoneNumbers } from '../../helpers/helpers';
 import { MAX_DEPOSIT_SUM, MAX_LONGATIONS } from '../../config/constants';
 
-const useStyles = makeStyles({
-  container: {
-    flexGrow: 1,
-    height: '100%',
-    paddingRight: 20
-  },
-  marginLeft: {
-    marginLeft: 10
-  }
-});
+const useStyles = makeStyles((theme: Theme) => 
+  createStyles({
+    container: {
+      flexGrow: 1,
+      height: '100%',
+      paddingRight: 20,
+      [theme.breakpoints.down('sm')]: {
+        paddingRight: 0
+      }
+    },
+    marginLeft: {
+      marginLeft: 10
+    }
+  })
+);
 
 function DepositInputs() {
   const styles = useStyles();
@@ -141,7 +147,7 @@ function DepositInputs() {
         }
         label="Без поповнення в перший місяць"
       />
-       <InputSlider 
+      <InputSlider 
         value={deposit.longation}
         marks={longation}
         handleChange={handleLongationChange}

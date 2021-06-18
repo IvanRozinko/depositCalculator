@@ -7,19 +7,38 @@ import { DEPOSIT } from '../../config/constants';
 
 const useStyle = makeStyles((theme: Theme) => 
   createStyles({
+    container: {
+      display: 'flex',
+      flexDirection: 'row',
+      alignItems: 'center',
+      [theme.breakpoints.down('xs')]: {
+        marginTop: 20,
+        flexDirection: 'column'
+      },
+    },
     label: {
-      width: 140
+      width: 140,
+      [theme.breakpoints.down('xs')]: {
+        marginBottom: 20,
+        alignSelf: 'start'
+      }
     },
     buttonsContainer: {
       padding: '0 5%',
       marginRight: 100,
       [theme.breakpoints.down('md')]: {
         flexDirection: 'column'
+      },
+      [theme.breakpoints.down('xs')]: {
+        marginRight: 0
       }
     },
     helperText: {
       fontSize: 10,
-      textAlign: 'center'
+      textAlign: 'center',
+      [theme.breakpoints.down('md')]: {
+        marginBottom: 10
+      }
     }
   })
 );
@@ -33,11 +52,7 @@ function PercentDestination({ destination, handlePercentDestination }: Props) {
   const styles = useStyle();
   const isDeposit = destination === DEPOSIT;
   return (
-    <Box
-      display='flex'
-      flexDirection='row'
-      alignItems='center'
-    >
+    <Box className={styles.container}>
       <Typography className={styles.label}>
         Проценти
       </Typography>
