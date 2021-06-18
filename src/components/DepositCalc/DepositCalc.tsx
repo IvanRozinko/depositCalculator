@@ -1,11 +1,19 @@
 import React from 'react'
-import { Paper, Divider, Container } from '@material-ui/core'; 
+import { 
+  Paper, Divider, Container, Box 
+} from '@material-ui/core'; 
 import { Theme, makeStyles, createStyles } from '@material-ui/core/styles';
 import DepositInputs from '../DeposinInputs/DepositInputs';
 import DepositCharts from '../DepositCharts/DepositCharts';
 
 const useStyles = makeStyles((theme: Theme) => 
   createStyles({
+    container:{
+      display: 'flex',
+      flex: 1,
+      minHeight: '100vh',
+      backgroundColor: '#71a2b6'
+    },
     paper: {
       display: 'flex',
       margin: '40px',
@@ -26,18 +34,20 @@ function DepositCalc() {
   const styles = useStyles();
 
   return (
-    <Container 
-     maxWidth='lg'
-    >
-      <Paper
-        variant='elevation'
-        className={styles.paper}
+    <Box className={styles.container}>
+      <Container 
+      maxWidth='lg'
       >
-        <DepositInputs />
-        <Divider orientation='vertical' flexItem />
-        <DepositCharts />
-      </Paper>
-    </Container>
+        <Paper
+          variant='elevation'
+          className={styles.paper}
+        >
+          <DepositInputs />
+          <Divider orientation='vertical' flexItem />
+          <DepositCharts />
+        </Paper>
+      </Container>
+    </Box>
   )
 }
 
