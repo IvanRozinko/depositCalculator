@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/depositCalculator/static/css/main.2ae47eeb.chunk.css",
-    "main.js": "/depositCalculator/static/js/main.b1ebcf63.chunk.js",
-    "main.js.map": "/depositCalculator/static/js/main.b1ebcf63.chunk.js.map",
+    "main.js": "/depositCalculator/static/js/main.e24bccce.chunk.js",
+    "main.js.map": "/depositCalculator/static/js/main.e24bccce.chunk.js.map",
     "runtime-main.js": "/depositCalculator/static/js/runtime-main.af24370c.js",
     "runtime-main.js.map": "/depositCalculator/static/js/runtime-main.af24370c.js.map",
     "static/js/2.6f348942.chunk.js": "/depositCalculator/static/js/2.6f348942.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.af24370c.js",
     "static/js/2.6f348942.chunk.js",
     "static/css/main.2ae47eeb.chunk.css",
-    "static/js/main.b1ebcf63.chunk.js"
+    "static/js/main.e24bccce.chunk.js"
   ]
 }
