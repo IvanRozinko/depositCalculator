@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SliderLabel /> : renders correctly 1`] = `
+<Styled(MuiBox)
+  className="makeStyles-root-1"
+>
+  <WithStyles(ForwardRef(Typography))
+    component="span"
+  >
+    Slider
+  </WithStyles(ForwardRef(Typography))>
+</Styled(MuiBox)>
+`;
+
+exports[`<SliderLabel /> renders correctly 1`] = `
+<Styled(MuiBox)
+  className="makeStyles-root-1"
+>
+  <WithStyles(ForwardRef(Typography))
+    component="span"
+  >
+    Slider
+  </WithStyles(ForwardRef(Typography))>
+</Styled(MuiBox)>
+`;
+
+exports[`<SliderLabel renders correctly 1`] = `
+<Styled(MuiBox)
+  className="makeStyles-root-1"
+>
+  <WithStyles(ForwardRef(Typography))
+    component="span"
+  >
+    Slider
+  </WithStyles(ForwardRef(Typography))>
+</Styled(MuiBox)>
+`;
+
+exports[`SliderLabel renders correctly 1`] = `
+<Styled(MuiBox)
+  className="makeStyles-root-1"
+>
+  <WithStyles(ForwardRef(Typography))
+    component="span"
+  >
+    Slider
+  </WithStyles(ForwardRef(Typography))>
+</Styled(MuiBox)>
+`;

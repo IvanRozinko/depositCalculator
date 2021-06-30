@@ -35,14 +35,14 @@ function DepositInputs() {
   const styles = useStyles();
   const { deposit, setContextValue } = useDepositContext();
 
-  const mergeContextValue = (field: string, value: number | boolean | string) => {
+  const mergeContextValue = (field: string, value: number | boolean | string):void => {
     setContextValue({
       ...deposit,
-      [field]: value
+      [field]: value,
     })
   }
 
-  const handleRateChange = (e: any, value: number | number[]) => {
+  const handleRateChange = (e: React.ChangeEvent<HTMLInputElement>, value: number | number[]):void => {
     const duration = typeof value === 'number' ? value : value[0];
     setContextValue({
       ...deposit,
@@ -51,7 +51,7 @@ function DepositInputs() {
     })
   }
 
-  const handleSumChange = (e: any, value: number | number[]) => {
+  const handleSumChange = (e: React.ChangeEvent<HTMLInputElement>, value: number | number[]):void => {
     const sum = typeof value === 'number' ? value : value[0];
     mergeContextValue('sum', sum);
   }
@@ -66,33 +66,33 @@ function DepositInputs() {
     return normalized;
   }
   
-  const handleMonthlyChange = (e: any, value: number | number[]) => {
+  const handleMonthlyChange = (e: React.ChangeEvent, value: number | number[]):void => {
     const monthly = typeof value === 'number' ? value : value[0];
     mergeContextValue('monthly', monthly);
   } 
   
-  const handleSumInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const handleSumInputChange = (event: React.ChangeEvent<HTMLInputElement>):void => {
     const sum = stripNoneNumbers(event.target.value);
     mergeContextValue('sum', normalizeSum(parseInt(sum)));
   }
 
-  const handleMonthlyInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const handleMonthlyInputChange = (event: React.ChangeEvent<HTMLInputElement>):void => {
     const monthly = stripNoneNumbers(event.target.value)
     mergeContextValue('monthly', normalizeSum(+monthly));
   }
 
-  const handleCheckBox = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const handleCheckBox = (event: React.ChangeEvent<HTMLInputElement>):void => {
     mergeContextValue('withoutFirstMonth', event.target.checked)
   }
 
-  const getRateByDuration = (duration: number) => rates[`${duration}`] / 10;
+  const getRateByDuration = (duration: number):number => rates[`${duration}`] / 10;
 
-  const handleLongationChange = (e: any, value: number | number[]) => {
+  const handleLongationChange = (e: any, value: number | number[]):void => {
     const longation = typeof value === 'number' ? value : value[0];
     mergeContextValue('longation', longation);
   } 
 
-  const handlePercentDestination = (newDestination: string) => {
+  const handlePercentDestination = (newDestination: string):void => {
     mergeContextValue('percentDestination', newDestination)
   }
 

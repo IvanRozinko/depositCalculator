@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DepositChats /> should renders correctly 1`] = `
+<Styled(MuiBox)
+  className="makeStyles-container-1"
+  display="flex"
+  flex={1}
+  flexDirection="column"
+>
+  <Charts
+    monthlyTotal={40000}
+    profit={2517.55}
+    sum={100000}
+  />
+  <Styled(MuiBox)>
+    <InfoRow
+      label="Сума вкладу"
+      value="100 000,00 ₴"
+    />
+    <InfoRow
+      label="Сума поповнень"
+      value="40 000,00 ₴"
+    />
+    <InfoRow
+      label="Процентна ставка"
+      value="6 % на рік"
+    />
+    <InfoRow
+      label="Проценти (дохід)"
+      value="2 517,55 ₴"
+      valueBold={true}
+    />
+    <InfoRow
+      label="Податок"
+      value="490,92 ₴"
+    >
+      <IconTooltip />
+    </InfoRow>
+    <ProfitDetails
+      purePercent={4.83}
+      pureProfit="2 026,63 ₴"
+    />
+    <WithStyles(ForwardRef(Divider))
+      className="makeStyles-mb-2"
+    />
+    <Styled(MuiBox)
+      className="makeStyles-buttonContainer-3"
+    >
+      <WithStyles(ForwardRef(Button))
+        color="primary"
+        onClick={[Function]}
+        startIcon={<Memo />}
+        variant="contained"
+      >
+        Оформити депозит
+      </WithStyles(ForwardRef(Button))>
+    </Styled(MuiBox)>
+  </Styled(MuiBox)>
+</Styled(MuiBox)>
+`;

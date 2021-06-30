@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import DepositCalc from './components/DepositCalc/DepositCalc';
-import { DepositContext, Deposit } from './context/DepositInputs';
+import { DepositContext, Deposit, IDeposit } from './context/DepositInputs';
 
 function App() {
-  const [deposit, setState] = useState({ ...Deposit });
+  const [deposit, setState] = useState<IDeposit>({ ...Deposit });
 
-  const setContextValue = (newDeposit: typeof Deposit) => {
+  const setContextValue = (newDeposit: IDeposit) => {
     setState({ 
       ...deposit,
-      ...newDeposit
+      ...newDeposit,
     });
   }
 

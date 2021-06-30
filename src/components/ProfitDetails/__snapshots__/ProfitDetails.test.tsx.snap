@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProfitDetails /> : should render correctly 1`] = `
+<Styled(MuiBox)
+  className="makeStyles-container-1"
+>
+  <Styled(MuiBox)
+    alignItems="center"
+    className="makeStyles-header-2"
+    display="flex"
+    onClick={[Function]}
+  >
+    <Memo(ForwardRef(ArrowDropDownCircleOutlinedIcon))
+      className="makeStyles-arrow-5"
+      color="primary"
+    />
+    <WithStyles(ForwardRef(Typography))
+      className="makeStyles-bold-3"
+    >
+      Після сплати податку
+    </WithStyles(ForwardRef(Typography))>
+  </Styled(MuiBox)>
+  <WithStyles(ForwardRef(Collapse))
+    in={false}
+  >
+    <InfoRow
+      label="Проценти (дохід)"
+      value="100"
+    />
+    <InfoRow
+      label="Процентна ставка"
+      value="6.7 % на рік"
+    />
+  </WithStyles(ForwardRef(Collapse))>
+</Styled(MuiBox)>
+`;
+
+exports[`<ProfitDetatails /> : should render correctly 1`] = `
+<Styled(MuiBox)
+  className="makeStyles-container-1"
+>
+  <Styled(MuiBox)
+    alignItems="center"
+    className="makeStyles-header-2"
+    display="flex"
+    onClick={[Function]}
+  >
+    <Memo(ForwardRef(ArrowDropDownCircleOutlinedIcon))
+      className="makeStyles-arrow-5"
+      color="primary"
+    />
+    <WithStyles(ForwardRef(Typography))
+      className="makeStyles-bold-3"
+    >
+      Після сплати податку
+    </WithStyles(ForwardRef(Typography))>
+  </Styled(MuiBox)>
+  <WithStyles(ForwardRef(Collapse))
+    in={false}
+  >
+    <InfoRow
+      label="Проценти (дохід)"
+      value="100"
+    />
+    <InfoRow
+      label="Процентна ставка"
+      value="6.7 % на рік"
+    />
+  </WithStyles(ForwardRef(Collapse))>
+</Styled(MuiBox)>
+`;

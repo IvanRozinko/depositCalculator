@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<IconTooltip /> : should render correctly 1`] = `
+<WithStyles(ForwardRef(Tooltip))
+  open={false}
+  title="Загальна ставка оподаткування 19,5 % (18% податок + 1,5 % військовий збір)"
+>
+  <Memo(ForwardRef(HelpOutlineIcon))
+    className="makeStyles-ml-1"
+    color="primary"
+    onClick={[Function]}
+  />
+</WithStyles(ForwardRef(Tooltip))>
+`;

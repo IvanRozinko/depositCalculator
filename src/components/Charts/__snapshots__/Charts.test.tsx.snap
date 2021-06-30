@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Chats /> : should render correctly 1`] = `
+<Styled(MuiBox)
+  display="flex"
+  flexDirection="column"
+>
+  <InfoRow
+    centered={true}
+    label="Вклав"
+    value="Отримано"
+  />
+  <InfoRow
+    centered={true}
+    label="400"
+    value="420"
+    valueBold={true}
+  />
+  <FlexibleXYPlot
+    height={300}
+    stackBy="y"
+  >
+    <VerticalRectSeries
+      className=""
+      color="darkgray"
+      data={
+        Array [
+          Object {
+            "x": 4,
+            "x0": 0,
+            "y": 420,
+            "y0": 0,
+          },
+          Object {
+            "x": 9,
+            "x0": 5,
+            "y": 420,
+            "y0": 0,
+          },
+        ]
+      }
+      stack={false}
+      style={Object {}}
+    />
+    <VerticalRectSeries
+      className=""
+      color="#35322B"
+      data={
+        Array [
+          Object {
+            "x": 4,
+            "x0": 0,
+            "y": 1260,
+            "y0": 0,
+          },
+          Object {
+            "x": 9,
+            "x0": 5,
+            "y": 1260,
+            "y0": 0,
+          },
+        ]
+      }
+      stack={false}
+      style={Object {}}
+    />
+    <VerticalRectSeries
+      className=""
+      color="#3f51b5"
+      data={
+        Array [
+          Object {
+            "x": 4,
+            "x0": 0,
+            "y": 0,
+            "y0": 0,
+          },
+          Object {
+            "x": 9,
+            "x0": 5,
+            "y": 84,
+            "y0": 0,
+          },
+        ]
+      }
+      stack={false}
+      style={Object {}}
+    />
+  </FlexibleXYPlot>
+</Styled(MuiBox)>
+`;

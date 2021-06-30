@@ -1,0 +1,197 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DepositInputs />: should renders correctly 1`] = `
+<div
+  className="makeStyles-container-1"
+>
+  <WithStyles(ForwardRef(Typography))
+    variant="h6"
+  >
+    Стандарт строковий
+  </WithStyles(ForwardRef(Typography))>
+  <InputSlider
+    handleChange={[Function]}
+    label={
+      <SliderLabel
+        label="Ставка (на рік)/ Строк (міс.)"
+      />
+    }
+    marks={
+      Array [
+        Object {
+          "label": "3",
+          "value": 3,
+        },
+        Object {
+          "label": "4",
+          "value": 4,
+        },
+        Object {
+          "label": "5",
+          "value": 5,
+        },
+        Object {
+          "label": "6",
+          "value": 6,
+        },
+        Object {
+          "label": "7",
+          "value": 7,
+        },
+        Object {
+          "label": "8",
+          "value": 8,
+        },
+        Object {
+          "label": "9",
+          "value": 9,
+        },
+        Object {
+          "label": "10",
+          "value": 10,
+        },
+        Object {
+          "label": "11",
+          "value": 11,
+        },
+        Object {
+          "label": "12",
+          "value": 12,
+        },
+      ]
+    }
+    rate={6}
+    sliderOptions={
+      Object {
+        "aria-labelledby": "discrete-slider-custom",
+        "max": 12,
+        "min": 3,
+      }
+    }
+    value={4}
+    valueDisplay="on"
+  >
+    <RateText
+      rate="6 %"
+    />
+  </InputSlider>
+  <InputSlider
+    handleChange={[Function]}
+    label={
+      <SliderLabel
+        label="Сума"
+      />
+    }
+    sliderOptions={
+      Object {
+        "aria-labelledby": "discrete-slider-custom",
+        "max": 1000000,
+        "min": 0,
+      }
+    }
+    value={100000}
+    valueDisplay="off"
+  >
+    <TextInput
+      handleInputChange={[Function]}
+      sum={100000}
+    />
+  </InputSlider>
+  <InputSlider
+    handleChange={[Function]}
+    label={
+      <SliderLabel
+        label="Щомісячне поповнення"
+      />
+    }
+    sliderOptions={
+      Object {
+        "aria-labelledby": "discrete-slider-custom",
+        "max": 1000000,
+        "min": 0,
+      }
+    }
+    value={10000}
+    valueDisplay="off"
+  >
+    <TextInput
+      handleInputChange={[Function]}
+      sum={10000}
+    />
+  </InputSlider>
+  <WithStyles(ForwardRef(FormControlLabel))
+    control={
+      <WithStyles(ForwardRef(Checkbox))
+        checked={false}
+        color="primary"
+        onChange={[Function]}
+      />
+    }
+    label="Без поповнення в перший місяць"
+  />
+  <InputSlider
+    handleChange={[Function]}
+    label={
+      <SliderLabel
+        label="Кількість продовжень"
+      />
+    }
+    marks={
+      Array [
+        Object {
+          "label": "1",
+          "value": 1,
+        },
+        Object {
+          "label": "2",
+          "value": 2,
+        },
+        Object {
+          "label": "3",
+          "value": 3,
+        },
+        Object {
+          "label": "4",
+          "value": 4,
+        },
+        Object {
+          "label": "5",
+          "value": 5,
+        },
+      ]
+    }
+    sliderOptions={
+      Object {
+        "aria-labelledby": "discrete-slider-custom",
+        "max": 5,
+        "min": 0,
+      }
+    }
+    value={0}
+    valueDisplay="off"
+  >
+    <RateText
+      rate="0"
+    />
+  </InputSlider>
+  <PercentDestination
+    destination="deposit"
+    handlePercentDestination={[Function]}
+  />
+  <Styled(MuiBox)
+    alignItems="center"
+    display="flex"
+    flexDirection="row"
+    marginTop={2}
+  >
+    <Memo(ForwardRef(InfoOutlinedIcon))
+      color="primary"
+    />
+    <WithStyles(ForwardRef(Typography))
+      className="makeStyles-marginLeft-2"
+    >
+      Розрахунок процентів має довідковий характер
+    </WithStyles(ForwardRef(Typography))>
+  </Styled(MuiBox)>
+</div>
+`;

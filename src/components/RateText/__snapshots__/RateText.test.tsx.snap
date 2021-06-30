@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RateText />  should renders correctly 1`] = `
+<WithStyles(ForwardRef(Typography))
+  className="makeStyles-rate-1"
+>
+  10
+</WithStyles(ForwardRef(Typography))>
+`;
+
+exports[`<RateText /> : should renders correctly 1`] = `
+<WithStyles(ForwardRef(Typography))
+  className="makeStyles-rate-1"
+>
+  10
+</WithStyles(ForwardRef(Typography))>
+`;
+
+exports[`<RateText /> should renders correctly 1`] = `
+<WithStyles(ForwardRef(Typography))
+  className="makeStyles-rate-1"
+>
+  10
+</WithStyles(ForwardRef(Typography))>
+`;
+
+exports[`<RateText should renders correctly 1`] = `
+<WithStyles(ForwardRef(Typography))
+  className="makeStyles-rate-1"
+>
+  10
+</WithStyles(ForwardRef(Typography))>
+`;

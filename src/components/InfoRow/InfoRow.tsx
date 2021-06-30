@@ -5,7 +5,7 @@ interface Props {
   label: string,
   value: string,
   valueBold?: boolean,
-  children?: React.ReactChild,
+  children?: React.ReactNode,
   centered?: boolean
 }
 

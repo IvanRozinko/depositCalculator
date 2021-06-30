@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PercentDestination />  should renders correctly 1`] = `
+<Styled(MuiBox)
+  className="makeStyles-container-1"
+>
+  <WithStyles(ForwardRef(Typography))
+    className="makeStyles-label-2"
+  >
+    Проценти
+  </WithStyles(ForwardRef(Typography))>
+  <Styled(MuiBox)
+    className="makeStyles-buttonsContainer-3"
+    display="flex"
+    flexGrow={1}
+    justifyContent="space-between"
+  >
+    <Styled(MuiBox)
+      display="flex"
+      flexDirection="column"
+    >
+      <WithStyles(ForwardRef(Button))
+        color="default"
+        component="button"
+        onClick={[Function]}
+        startIcon={<Memo />}
+        variant="outlined"
+      >
+        До вкладу
+      </WithStyles(ForwardRef(Button))>
+      <WithStyles(ForwardRef(Typography))
+        className="makeStyles-helperText-4"
+      >
+        Збільшується ефективна дохідність
+      </WithStyles(ForwardRef(Typography))>
+    </Styled(MuiBox)>
+    <Styled(MuiBox)
+      display="flex"
+      flexDirection="column"
+    >
+      <WithStyles(ForwardRef(Button))
+        color="primary"
+        component="button"
+        onClick={[Function]}
+        startIcon={<Memo />}
+        variant="outlined"
+      >
+        На картку
+      </WithStyles(ForwardRef(Button))>
+      <WithStyles(ForwardRef(Typography))
+        className="makeStyles-helperText-4"
+      >
+        Проценти можливо відразу витрачати
+      </WithStyles(ForwardRef(Typography))>
+    </Styled(MuiBox)>
+  </Styled(MuiBox)>
+</Styled(MuiBox)>
+`;
+
+exports[`<PercentDestination />: should renders correctly 1`] = `
+<Styled(MuiBox)
+  className="makeStyles-container-1"
+>
+  <WithStyles(ForwardRef(Typography))
+    className="makeStyles-label-2"
+  >
+    Проценти
+  </WithStyles(ForwardRef(Typography))>
+  <Styled(MuiBox)
+    className="makeStyles-buttonsContainer-3"
+    display="flex"
+    flexGrow={1}
+    justifyContent="space-between"
+  >
+    <Styled(MuiBox)
+      display="flex"
+      flexDirection="column"
+    >
+      <WithStyles(ForwardRef(Button))
+        color="default"
+        component="button"
+        onClick={[Function]}
+        startIcon={<Memo />}
+        variant="outlined"
+      >
+        До вкладу
+      </WithStyles(ForwardRef(Button))>
+      <WithStyles(ForwardRef(Typography))
+        className="makeStyles-helperText-4"
+      >
+        Збільшується ефективна дохідність
+      </WithStyles(ForwardRef(Typography))>
+    </Styled(MuiBox)>
+    <Styled(MuiBox)
+      display="flex"
+      flexDirection="column"
+    >
+      <WithStyles(ForwardRef(Button))
+        color="primary"
+        component="button"
+        onClick={[Function]}
+        startIcon={<Memo />}
+        variant="outlined"
+      >
+        На картку
+      </WithStyles(ForwardRef(Button))>
+      <WithStyles(ForwardRef(Typography))
+        className="makeStyles-helperText-4"
+      >
+        Проценти можливо відразу витрачати
+      </WithStyles(ForwardRef(Typography))>
+    </Styled(MuiBox)>
+  </Styled(MuiBox)>
+</Styled(MuiBox)>
+`;

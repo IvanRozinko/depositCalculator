@@ -1,4 +1,4 @@
-export const uahFormatter = (number: number) => {
+export const uahFormatter = (number: number):string => {
   const formatter = new Intl.NumberFormat('uk-UA', {
     style: 'currency',
     currency: 'UAH'
@@ -6,13 +6,13 @@ export const uahFormatter = (number: number) => {
   return formatter.format(number);
 }
 
-export const decimalFormatter = (number: number) => {
+export const decimalFormatter = (number: number):string => {
   const formatter = new Intl.NumberFormat('uk-UA', {
     style: 'decimal',
   });
   return formatter.format(number);
 }
 
-export const stripNoneNumbers = (string: string) => {
+export const stripNoneNumbers = (string: string):string => {
   return string.replace(/[^0-9.]/g, '');
 }

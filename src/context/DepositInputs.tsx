@@ -1,6 +1,21 @@
 import { createContext, useContext } from "react"
 
-export const Deposit = {
+export interface IDeposit {
+  duration: number,
+  percent: number,
+  sum: number,
+  monthly: number,
+  withoutFirstMonth: boolean,
+  longation: number,
+  percentDestination: string
+}
+
+export interface DepositDefaultContext{
+  deposit: IDeposit
+  setContextValue: (newDeposit: IDeposit) => void
+}
+
+export const Deposit: IDeposit = {
   duration: 4,
   percent: 6,
   sum: 100000,
@@ -10,13 +25,9 @@ export const Deposit = {
   percentDestination: 'deposit'
 }
 
-export type DepositDefaultContext = {
-  deposit: typeof Deposit,
-  setContextValue: (newDeposit: typeof Deposit) => void
-}
-
 export const DepositContext = createContext<DepositDefaultContext>({
   deposit: Deposit,
-  setContextValue: () => {}
+  setContextValue: (newDeposit: IDeposit):void => {}
 })
-export const useDepositContext = () => useContext(DepositContext)
+
+export const useDepositContext = () => useContext<DepositDefaultContext>(DepositContext)

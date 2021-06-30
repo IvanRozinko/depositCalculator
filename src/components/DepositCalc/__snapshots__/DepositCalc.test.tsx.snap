@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DepositCalc /> : should renders correctly 1`] = `
+<Styled(MuiBox)
+  className="makeStyles-container-1"
+>
+  <WithStyles(ForwardRef(Container))
+    maxWidth="lg"
+  >
+    <WithStyles(ForwardRef(Paper))
+      className="makeStyles-paper-2"
+      variant="elevation"
+    >
+      <DepositInputs />
+      <WithStyles(ForwardRef(Divider))
+        flexItem={true}
+        orientation="vertical"
+      />
+      <DepositCharts />
+    </WithStyles(ForwardRef(Paper))>
+  </WithStyles(ForwardRef(Container))>
+</Styled(MuiBox)>
+`;

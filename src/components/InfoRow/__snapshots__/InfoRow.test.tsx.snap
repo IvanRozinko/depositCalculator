@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<InfoRow />: should render correctly 1`] = `
+<Styled(MuiBox)
+  display="flex"
+  flexDirection="row"
+>
+  <WithStyles(ForwardRef(Typography))
+    className="makeStyles-label-1"
+  >
+    label
+  </WithStyles(ForwardRef(Typography))>
+  <WithStyles(ForwardRef(Typography))
+    className="makeStyles-label-1"
+  >
+    value
+  </WithStyles(ForwardRef(Typography))>
+</Styled(MuiBox)>
+`;

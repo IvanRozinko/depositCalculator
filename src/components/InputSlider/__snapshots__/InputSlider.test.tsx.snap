@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<InputSlider />: should renders correctly 1`] = `
+<Fragment>
+  <Styled(MuiBox)
+    className="makeStyles-container-1"
+  >
+    <div
+      className="makeStyles-slider-2"
+    >
+      <WithStyles(ForwardRef(Slider))
+        aria-labelledby="stringg"
+        max={10}
+        min={0}
+        onChange={[MockFunction]}
+        value={10}
+        valueLabelDisplay="off"
+        valueLabelFormat={[Function]}
+      />
+    </div>
+  </Styled(MuiBox)>
+  <Styled(MuiBox)
+    display={
+      Object {
+        "sm": "none",
+        "xs": "block",
+      }
+    }
+  >
+    <WithStyles(ForwardRef(Divider)) />
+  </Styled(MuiBox)>
+</Fragment>
+`;
